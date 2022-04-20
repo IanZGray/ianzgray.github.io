@@ -22,7 +22,8 @@
 </head>
 <body class="bg-light">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-magenta">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-magenta" style="box-shadow: -0vw .1vw .25vw .1vw black;
+        ">
             <div class="container-fluid">
               <a class="navbar-brand" href="./index.html">Ian Gray</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +46,11 @@
           </nav>
     </header>
     
+    <video autoplay muted loop id="myVideo" class="background-animation">
+      <source src="./images/testvid.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
     <div class="grid-container">
       <div class="hero-image"></div>
       <div class="hero-text">            
@@ -71,5 +77,9 @@
 
     </div>
     
+    <script>
+      var video = document.getElementById("myVideo");
+      </script>
+
 </body>
 </html>

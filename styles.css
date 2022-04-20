@@ -1,14 +1,32 @@
-body, html {
+/* body, html { */
     /* height: 100%; */
     /* background-image: var(--bs-gradient); */
-}
+/* } */
+
 
 h1 {
     font-family: 'Bodoni Moda', serif;
 }
 
+.background-animation {
+    /* width: 100%; */
+    /* height: 50%; */
+    /* color: red;
+    background-color: blue; */
+    /* border-width: 5vw; */
+    /* position: absolute; */
+    z-index: 1;
+    position: fixed;
+    /* right: 0; */
+    /* bottom: 0; */
+    min-width: 100vw; 
+    min-height: 100vh;
+}
 
 .grid-container {
+    position: absolute;
+    z-index: 2;
+    margin-top: 5vw;
     display: grid;
     align-items: center;
     align-self: left;
@@ -31,21 +49,24 @@ h1 {
   max-width: 100%;
 
   /* Position and center the image to scale nicely on all screens */
-  background-position: top left;
+  /* background-position: top left; */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   
   /* sets grid position */
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
+
+  /* drop shadow */
+  box-shadow: 1vw 1vw 1vw black;
 }
 
 .hero-text {
   text-align: center;
   color: rgb(41, 3, 41);
   font-family: 'Bodoni Moda', serif;
-  grid-column-start: 3;
+  grid-column-start: 2;
   grid-column-end: 5;
   font-size: 1.5em;
 }
@@ -65,7 +86,7 @@ h1 {
     font-size: .78em;
     margin-left: 2.5vw;
     margin-right: 3vw;
-    margin-top: 2vw;
+    margin-top: 3vw;
     text-align: justify;
     /* color: rgb(41, 3, 41); */
 }
