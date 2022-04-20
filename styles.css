@@ -1,57 +1,84 @@
-body, html {
-    height: 100%;
+/* body, html { */
+    /* height: 100%; */
     /* background-image: var(--bs-gradient); */
+/* } */
+
+h1 {
+    font-family: 'Bodoni Moda', serif;
 }
-
-/* h1 { */
-    /* font-family: 'Bodoni Moda', serif; */
-    /* font-weight:900;  */
-    /* font-weight: bold; */
-/* } */
-
-/* p { */
-    /* font-family: 'Bodoni Moda', serif; */
-/* } */
 
 
 .grid-container {
     display: grid;
-    grid-template-rows: 25vw, 25vw, 25vw, 25vw;
-    background-color: #6faac5;
-}
-
-
+    align-items: center;
+    align-self: left;
+    grid-template-columns: 25vw 25vw 25vw 23.5vw; /*Make the grid smaller than the container*/
+    grid-template-rows: 65vh 45vh 25vw 25vw;
+  }
+  
+/* .grid-container > div { */
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* text-align: center; */
+  /* padding: 10vw 1vw; */
+  /* font-size: 2em; */
+/* } */
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image so the text is easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/ProfilePic.jpg");
-  height: 55vh;
-  max-width: 50vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("images/ProfilePic.jpg");
+  filter: sepia(1);
+  height: 100%;
+  max-width: 100%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  /* transform: translate(0vw, -5vh); */
   
   /* sets grid position */
-  /* grid-column-start: 1;
-  grid-column-end: 4; */
-  grid-row-start: 1;
-  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .hero-text {
   text-align: center;
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  color: white;
+  color: rgb(41, 3, 41);
   font-family: 'Bodoni Moda', serif;
-  /* grid-column-start: 1;
-  grid-column-end:5; */
+  grid-column-start: 3;
+  grid-column-end: 5;
+  font-size: 1.5em;
+}
+
+/* .socials { */
+    /* padding-top: 15vh; */
+/* } */
+
+.bio-container {
+    /* background-color: black; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 100%;
+}
+
+.bio {
+    font-size: 1.5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 2vh;
+    text-align: justify;
+    /* color: rgb(41, 3, 41); */
+}
+
+.video-container {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: black;
+    color: white;
+    font-size: 15vw;
+    text-align: center;
+    /* padding-top: 10%; */
+    height: 100%;
 }
 
 .bg-magenta {
@@ -64,7 +91,6 @@ body, html {
 
 .navbar-text {
     font-style: italic;
-
 }
 
 #navbarText {
