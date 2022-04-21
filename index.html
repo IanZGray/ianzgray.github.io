@@ -47,14 +47,15 @@
     </header>
     
     <video autoplay muted loop id="myVideo" class="background-animation">
-      <source src="./images/testvid.mp4" type="video/mp4">
+      <source src="./images/testvid2.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
 
     <div class="grid-container">
-      <div class="hero-image"></div>
+      <img src="./images/ProfilePic.jpg" alt="Profile Picture" class="hero-image">
+      <!-- <div class="hero-image"></div> -->
       <div class="hero-text">            
-        <h1>I am Ian Gray</h1>
+        <h1 style="font-size: 2em; font-weight: 700;">I am Ian Gray</h1>
         <p>And I'm a Web Developer</p>
         <div>
           <a href="https://github.com/IanZGray" style="color: rgb(41, 3, 41)">
@@ -73,10 +74,46 @@
           My name is Ian, and I'm currently preparing to complete a Full Stack Web Development program at MIT. I've always been a creative type who works through the vehicle of science. I previously earned a Bachelor's of Science in Computer Animation, and spent a decade developing new, practical techniques in the physical sciences as both a professional and a business owner. Using scientific approaches is the best route toward concrete solutions. Allowing inspiration to flow from an artistic, creative perspective empowers those solutions to solve the most important, and wide reaching problems. Github username: IanZGray
         </p>
       </div>  
-      <div class="video-container">Video</div>
+
+      <div class="skill-container">
+
+        <div class="bubble">
+          <div class="sub-grid">
+
+            <ul class="tools">
+              <li style="font-size: 2vw; font-weight: 700; font-variant: small-caps; color:rgb(101, 27, 150)">Tools</li>
+              <li>VSCode</li>
+              <li>Node.js</li>
+              <li>Adobe XD<li>
+              <li>Photoshop</li>
+            </ul>
+
+            <ul class="lang">
+              <li style="font-size: 2vw; font-weight: 700; font-variant: small-caps; color:rgb(101, 27, 150)">Languages</li>
+              <li>Javascript</li>
+              <li>Html5</li>
+              <li>CSS</li>
+              <li>Python</li>
+           </ul> 
+
+            <ul class="skills">
+              <li style="font-size: 2vw; font-weight: 700; font-variant: small-caps; color:rgb(101, 27, 150)">Skills</li>
+              <li>Communication</li>
+              <li>Collaboration</li>
+              <li>Creativity</li>
+              <li>Leadership</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="video-container">Video
+      </div>
 
     </div>
     
+
     <script>
       var video = document.getElementById("myVideo");
       </script>
