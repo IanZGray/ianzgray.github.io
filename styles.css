@@ -1,8 +1,16 @@
+body {
+    color: rgb(41, 3, 41);
+}
 h1 {
     font-family: 'Bodoni Moda', serif;
     z-index: 2; 
     position: relative; 
     text-align: center; 
+    color: rgb(41, 3, 41);
+}
+
+p {
+    line-height: 1.2;
 }
 
 li {
@@ -24,7 +32,7 @@ li {
     align-items: center;
     align-self: left;
     grid-template-columns: 14.1vw 14.1vw 14.1vw 14.1vw 14.1vw 14.1vw 14.1vw; /*Make the grid smaller than the container*/
-    grid-template-rows: 38vw 12.5vw 12.5vw 12.5vw 50vw;
+    grid-template-rows: 38vw 10vw 10vw 12vw 50vw;
   }
    
 /* .grid-container > div { */
@@ -49,30 +57,28 @@ li {
     4vw 
     9.3vw 9.3vw 9.3vw 
     4vw; /*Make the grid smaller than the container*/
-    grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
+    grid-template-rows: 20vh 20vh 20vh 20vh 22vh 20vh 20vh;
   }
 
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image so the text is easier to read */
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("images/ProfilePic.jpg"); */
-  /* filter:saturate(1); */
-  min-height: 100%;
-  /* max-height: 100%; */
-  max-width: 100%;
-  /* min-width: 100%; */
+.project-image {
+  margin-top: 1vw;
+  /* filter: sepia(.5); */
+  height: 40vh;
+  max-width: 85%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: relative;
+  /* object-position: 100% 50%; */
+}
 
-  /* Position and center the image to scale nicely on all screens */
-  /* background-position: top left; */
+.hero-image {
+  min-height: 100%;
+  max-width: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
   position: relative;
   object-position: 25% 100%;
-  
-  /* sets grid position */
-  grid-column-start: 1;
-  grid-column-end: 3;
-
-  /* drop shadow */
+  grid-column: 1 / 3;
   box-shadow: -1vw 1vw .8vw black;
 }
 
@@ -111,9 +117,7 @@ li {
 .sub-grid {
     display: grid;
     grid-template-columns: 30% 30% 30%; /*Make the grid smaller than the container*/
-    /* grid-template-rows: 30% 30% 30%; */
     grid-column: 5/8;
-    /* grid-row:2/5; */
 }
 
 .bubble {
@@ -126,15 +130,13 @@ li {
     /* inner text */
     color: rgb(41, 3, 41);
     font-family: bodoni;
+    font-size: 1.5vw;
     text-align: center;
-    /* position */
-    /* margin-top: 5vw; */
-    /* margin-bottom: 5vw; */
 }
 
 .skill-container {
     grid-column: 5/8;
-    grid-row: 2/3;
+    grid-row: 2/4;
 }
 
 .tools {
@@ -175,6 +177,22 @@ li {
     height: 80%;
 }
 
+.button {
+    border-radius: .5vw;
+    /* border-color: brown; */
+    background-color: rgb(41, 3, 41);;
+    color: white;
+    font-weight: bold;
+    font-size: 1vw;
+    position: relative;
+    /* left: 1vw;
+    top: 1vw; */
+    width: 12vw;
+    height: 4vw;
+    box-shadow: -.3vw .3vw .4vw rgba(0, 0, 0, .75), 0vw 0vw .5vw .1vw white inset;
+}
+
+/* edited Bootstrap classes */
 .bg-magenta {
     background: rgb(41, 3, 41);
 }
