@@ -91,7 +91,7 @@ li {
   font-size: 3.5vw;
 }
 
-.bio-container {
+.bio-bubble {
     border-radius: .5vw;
     height: 90%;
     width: 90%;
@@ -99,7 +99,7 @@ li {
     margin-top: 5%;
     grid-column: 1/5;
     grid-row: 2/5;
-    box-shadow: 0vw 0vw 2vw .5vw white inset, 
+    box-shadow: 0vw 0vw .5vw .5vw rgba(255, 255, 255, 0.8) inset, 
     -.5vw .5vw 1vw black; 
 }
 
@@ -120,18 +120,65 @@ li {
     grid-column: 5/8;
 }
 
-.bubble {
+.skill-bubble {
     /* shape */
     border-radius: .5vw;
     width: 98%;
     height: 90%;
-    box-shadow: 0vw 0vw 2vw .5vw white inset, 
-    -.5vw .5vw 1vw black;
+    box-shadow: 0vw 0vw .5vw .5vw rgba(255, 255, 255, .8) inset, 
+    -.5vw .5vw 1.2vw black;
     /* inner text */
     color: rgb(41, 3, 41);
     font-family: bodoni;
     font-size: 1.5vw;
     text-align: center;
+}
+
+.skill-container {
+    margin-top:-5vw;
+    grid-column: 5/8;
+    grid-row: 2/4;
+}
+
+.tools {
+    width: 98%;
+    height: 95%;
+    color: rgb(41, 3, 41);
+    font-weight: bold;
+    grid-column: 1;
+    grid-row: 2/3;
+    margin-top: .5vw;
+}
+
+.lang {
+    width: 98%;
+    height: 95%;
+    color: rgb(41, 3, 41);
+    font-weight: bold;
+    grid-column: 2;
+    grid-row: 2/3;
+    margin-top: .5vw;
+}
+
+.skills {
+    width: 98%;
+    height: 95%;
+    color: rgb(41, 3, 41);
+    font-weight: bold;
+    grid-column: 3;
+    grid-row: 2/3;
+    margin-top: .5vw;
+}
+
+.video-container {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    background-color: black;
+    color: white;
+    font-size: 15vw;
+    text-align: center;
+    margin-top: 10%;
+    height: 80%;
 }
 
 .bubble-projects {
@@ -146,49 +193,6 @@ li {
     font-family: bodoni;
     font-size: 1.5vw;
     text-align: center;
-}
-
-.skill-container {
-    grid-column: 5/8;
-    grid-row: 2/4;
-}
-
-.tools {
-    width: 98%;
-    height: 95%;
-    color: rgb(41, 3, 41);
-    font-weight: bold;
-    grid-column: 1;
-    grid-row: 2/3;
-}
-
-.lang {
-    width: 98%;
-    height: 95%;
-    color: rgb(41, 3, 41);
-    font-weight: bold;
-    grid-column: 2;
-    grid-row: 2/3;
-}
-
-.skills {
-    width: 98%;
-    height: 95%;
-    color: rgb(41, 3, 41);
-    font-weight: bold;
-    grid-column: 3;
-    grid-row: 2/3;
-}
-
-.video-container {
-    grid-column-start: 2;
-    grid-column-end: 7;
-    background-color: black;
-    color: white;
-    font-size: 15vw;
-    text-align: center;
-    margin-top: 10%;
-    height: 80%;
 }
 
 .button {
