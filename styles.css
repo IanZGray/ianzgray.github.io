@@ -97,12 +97,6 @@ li {
     color: rgb(41, 3, 41);
 }
 
-.sub-grid {
-    display: grid;
-    grid-template-columns: 30% 30% 30%; /*Make the grid smaller than the container*/
-    grid-column: 5/8;
-}
-
 .skill-bubble {
     /* shape */
     border-radius: .5vw;
@@ -110,47 +104,32 @@ li {
     height: 90%;
     box-shadow: 0vw 0vw .5vw .5vw rgba(255, 255, 255, .8) inset, 
     -.5vw .5vw 1.2vw black;
-    /* inner text */
-    color: rgb(41, 3, 41);
-    font-family: bodoni;
-    font-size: 1.5vw;
-    text-align: center;
-}
-
-.skill-container {
+    /* position */
     margin-top:-5vw;
     grid-column: 5/8;
     grid-row: 2/4;
 }
 
-.tools {
-    width: 98%;
-    height: 95%;
-    color: rgb(41, 3, 41);
-    font-weight: bold;
-    grid-column: 1;
-    grid-row: 2/3;
-    margin-top: .5vw;
-}
 
-.lang {
-    width: 98%;
-    height: 95%;
-    color: rgb(41, 3, 41);
-    font-weight: bold;
-    grid-column: 2;
-    grid-row: 2/3;
-    margin-top: .5vw;
+.skill-header {
+    font-size: 2vw; 
+    font-weight: 700; 
+    font-variant: small-caps; 
+    color:rgb(101, 27, 150)
 }
 
 .skills {
-    width: 98%;
-    height: 95%;
     color: rgb(41, 3, 41);
     font-weight: bold;
-    grid-column: 3;
+    font-family: bodoni;
+    font-size: 1.5vw;
+    /* position */
+    text-align: center;
+    margin-left: -3.5vh;
+    margin-top: 2vh;
+    width: 98%;
+    height: 95%;
     grid-row: 2/3;
-    margin-top: .5vw;
 }
 
 .video-container {
