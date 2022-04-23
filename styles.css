@@ -42,34 +42,6 @@ li {
   /* font-size: 2em; */
 /* } */
 
-.grid-projects {
-    position: relative;
-    z-index: 2;
-    margin-top: 20vh;
-    display: grid;
-    align-items: center;
-    align-self: left;
-    grid-template-columns: 
-    4vw 
-    9.3vw 9.3vw 9.3vw
-    4vw 
-    9.3vw 9.3vw 9.3vw 
-    4vw 
-    9.3vw 9.3vw 9.3vw 
-    4vw; /*Make the grid smaller than the container*/
-    grid-template-rows: 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
-  }
-
-.project-image {
-  margin-top: 1vw;
-  /* filter: sepia(.5); */
-  height: 20vw;
-  max-width: 85%;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  position: relative;
-  /* object-position: 100% 50%; */
-}
 
 .hero-image {
   min-height: 100%;
@@ -108,6 +80,17 @@ li {
     text-indent: 1vw;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
+    margin-top: 1vw;
+    text-align: justify;
+    font-family: bodoni;
+    color: rgb(41, 3, 41);
+}
+
+.project-details {
+    font-size: 1.5vw;
+    text-indent: 1vw;
+    /* margin-left: 1.5vw;
+    margin-right: 1.5vw; */
     margin-top: 1vw;
     text-align: justify;
     font-family: bodoni;
@@ -181,6 +164,34 @@ li {
     height: 80%;
 }
 
+.grid-projects {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    align-items: center;
+    align-self: left;
+    grid-template-columns: 
+    4vw 
+    9.3vw 9.3vw 9.3vw
+    4vw 
+    9.3vw 9.3vw 9.3vw 
+    4vw 
+    9.3vw 9.3vw 9.3vw 
+    4vw; /*Make the grid smaller than the container*/
+    grid-template-rows: 10vw 10vw 10vw 10vw 10vw 10vw;
+}
+
+.project-image {
+  margin-top: 1vw;
+  /* filter: sepia(.5); */
+  height: 20vw;
+  max-width: 85%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: relative;
+  /* object-position: 100% 50%; */
+}
+
 .bubble-projects {
     /* shape */
     border-radius: .5vw;
@@ -222,6 +233,13 @@ li {
     color: rgb(41, 3, 41);
     /* color: white; */
 }
+.sub-grid-bubble {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 10vw 10vw 10vw 10vw 10vw 10vw;
+    grid-column: 5/8;
+}
+
 /* edited Bootstrap classes */
 .bg-magenta {
     background: rgb(41, 3, 41);
