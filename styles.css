@@ -195,6 +195,11 @@ li {
     text-align: center;
 }
 
+.button-wrapper {
+    display:inline-flex;
+    justify-self: center;
+}
+
 .button {
     border-radius: .5vw;
     /* border-color: brown; */
@@ -203,6 +208,7 @@ li {
     background-color: rgb(41, 3, 41);
     color: white;
     /* color: rgb(41, 3, 41); */
+    font-family: 'bodoni moda', serif;
     font-weight: bold;
     font-size: 1vw;
     position: relative;
@@ -212,8 +218,11 @@ li {
     height: 4vw;
     box-shadow: -.3vw .3vw .4vw rgba(0, 0, 0, .75), 0vw 0vw .5vw .1vw white inset;
 
+    top: -1vw;
+    margin: .25vw;
     /* cursor: pointer; */
     transition-duration: 0.4s;
+    /* display:inline-flex;justify-self: center; */
 }
 
 .button:hover {
