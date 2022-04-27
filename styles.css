@@ -75,6 +75,7 @@ li {
 }
 
 .bio-bubble {
+    background-color: rgba(255, 255, 255, .15);
     border-radius: .5vw;
     height: 90%;
     width: 90%;
@@ -107,6 +108,7 @@ li {
 }
 
 .skill-bubble {
+    background-color: rgba(255, 255, 255, .15);
     /* shape */
     border-radius: .5vw;
     width: 98%;
@@ -142,6 +144,7 @@ li {
 }
 
 .video-container {
+    box-shadow: -.5vw .5vw 1vw black; 
     grid-column-start: 2;
     grid-column-end: 7;
     background-color: black;
@@ -182,6 +185,7 @@ li {
 }
 
 .bubble-projects {
+    background-color: rgba(255, 255, 255, .15);
     /* shape */
     border-radius: .5vw;
     width: 98%;
