@@ -43,7 +43,7 @@ li {
     align-items: center;
     align-self: left;
     grid-template-columns: 14.1vw 14.1vw 14.1vw 14.1vw 14.1vw 14.1vw 14.1vw; /*Make the grid smaller than the container*/
-    grid-template-rows: 38vw 10vw 10vw 12vw 50vw;
+    grid-template-rows: 38vw 10vw 10vw 12vw 8vw;
     font-family: 'bodoni moda', serif;
 }
    
